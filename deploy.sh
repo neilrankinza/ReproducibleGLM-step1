@@ -13,6 +13,8 @@ git config --global user.email $AUTHOREMAIL
 cd $RENDERDIR
 
 R CMD BATCH build.R
+cp build.Rout docs
+rm build.Rout
 
 git add .
 git commit -am "[ci skip] Documents produced in clean environment via Travis $TRAVIS_BUILD_NUMBER"

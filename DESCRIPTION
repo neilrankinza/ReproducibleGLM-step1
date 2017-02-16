@@ -1,11 +1,10 @@
-Package: step00setup
-Title: A Project Environment
+Package: step10setup
+Title: A Project with Collected Data
 Version: 0.1.0
 Authors@R: person("Steph", "Locke",   email="steph@itsalocke.com", role = c("aut", "cre"))
-Description: This shows the basic setup steps for making a reproducible analysis project.
+Description: This shows the data collection steps for a data project.
 Depends:
-    R (>= 3.1.2)
-Suggests:
+    R (>= 3.1.2),
     knitr,
     rmarkdown,
     packrat
