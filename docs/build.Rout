@@ -951,10 +951,22 @@ label: finalcaretsample
 
   |                                                                         |.......................................................          |  84%
 label: storesampleIDs
-Quitting from lines 96-102 (./../analysis/DataSampling.Rmd) 
-Quitting from lines 26-37 (./../analysis/DataSampling.Rmd) 
-Error in gzfile(file, "wb") : cannot open the connection
-Calls: <Anonymous> ... withCallingHandlers -> withVisible -> eval -> eval -> save -> gzfile
+  |                                                                         |..........................................................       |  89%
+  ordinary text without R code
+
+  |                                                                         |..............................................................   |  95%
+label: checkforchanges
+  |                                                                         |.................................................................| 100%
+  ordinary text without R code
 
 
-Execution halted
+
+output file: FullModel.knit.md
+
+/usr/bin/pandoc +RTS -K512m -RTS FullModel.utf8.md --to docx --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /home/travis/build/stephlocke/ReproducibleGLM-step1/docs/FullModel.docx --highlight-style tango 
+
+Output created: docs/FullModel.docx
+> 
+> proc.time()
+   user  system elapsed 
+  7.012   0.324   7.695 
