@@ -6,9 +6,7 @@ AUTHORNAME="Steph"
 AUTHOREMAIL="Steph@itsalocke.com"
 GITURL="https://$GITHUB_PAT@github.com/$TRAVIS_REPO_SLUG.git"
 
-git remote remove origin
-git remote add origin $GITURL
-git pull
+git remote set-url origin $GITURL
 git config --global user.name $AUTHORNAME
 git config --global user.email $AUTHOREMAIL
 
