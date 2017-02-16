@@ -27,11 +27,7 @@ titanicdb<-dbConnect(SQLite(),dbname="data-raw/titanic.sqlite")
 
 ``` r
 library(PASWR)
-#> Loading required package: e1071
-#> Loading required package: MASS
-#> Loading required package: lattice
 dbWriteTable(titanicdb, "titanic", titanic3, overwrite=TRUE)
-#> [1] TRUE
 ```
 
 Data steps

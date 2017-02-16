@@ -28,7 +28,7 @@ Lets use Titanic data!
 - Install RSQLite package from CRAN
 - Make a titanic db in `data-raw`
 
-```{r dbconn}
+```r
 library(DBI)
 library(RSQLite)
 titanicdb<-dbConnect(SQLite(),dbname="data-raw/titanic.sqlite")
@@ -36,7 +36,7 @@ titanicdb<-dbConnect(SQLite(),dbname="data-raw/titanic.sqlite")
 
 - Add titanic data to the db
 
-```{r dbwrite}
+```r
 library(PASWR)
 dbWriteTable(titanicdb, "titanic", titanic3, overwrite=TRUE)
 ```
