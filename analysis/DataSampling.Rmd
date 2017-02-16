@@ -87,6 +87,32 @@ This gives us fewer cases where the class ratio is significantly different betwe
 ## Reproducible sampling
 We saw that we can set the seed within in a function to always yield the same value from our sampling process. We need to do this to select our training data so that the results don't shift each time we run the analysis.
 
+## Defensive sampling
 ### Final sample
+```{r finalcaretsample}
+library(caret)
+set.seed(8787)
+rows_train_c<-createDataPartition(titanic_all$survived, p = prop_train, list=FALSE)
+titanic_train_c<-titanic_all[rows_train_c,]
+titanic_test_c<-titanic_all[-rows_train_c,]
+```
 
-### Storing the sample
+### Storing a copy (one-off)
+```{r storesampleIDs}
+cache_file<-"../data-processed/sampleIDs.Rdata"
+if(!file.exists(cache_file)){
+  sample_cache<- rows_train_c
+  save(sample_cache,file=cache_file)
+  rm(sample_cache)
+}
+```
+
+
+### Check for changes
+```{r checkforchange}
+load(cache_file)
+if(!identical(rows_train_c, sample_cache)) stop("Hey, the sample has changed, you should check that out!")
+```
+
+
+
