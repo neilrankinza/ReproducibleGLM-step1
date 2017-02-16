@@ -17,8 +17,87 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
 Type 'q()' to quit R.
 
-> packrat::on()
+> sessionInfo()
+R version 3.3.2 (2016-10-31)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu precise (12.04.5 LTS)
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+> find.package("rmarkdown")
+[1] "/home/travis/R/Library/rmarkdown"
 > rmarkdown::render("README.Rmd", output_format = rmarkdown::github_document(), output_dir="docs")
-Error in loadNamespace(name) : there is no package called ‘rmarkdown’
-Calls: :: ... tryCatch -> tryCatchList -> tryCatchOne -> <Anonymous>
+
+
+processing file: README.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |......................                                           |  33%
+  ordinary text without R code
+
+  |                                                                         |...........................................                      |  67%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |                                                                         |.................................................................| 100%
+  ordinary text without R code
+
+
+output file: README.knit.md
+
+/usr/bin/pandoc +RTS -K512m -RTS README.utf8.md --to markdown_github --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /home/travis/build/stephlocke/ReproducibleGLM-step1/docs/README.md --standalone --template /home/travis/R/Library/rmarkdown/rmarkdown/templates/github_document/resources/default.md 
+/usr/bin/pandoc +RTS -K512m -RTS /home/travis/build/stephlocke/ReproducibleGLM-step1/docs/README.md --to html --from markdown_github --output /home/travis/build/stephlocke/ReproducibleGLM-step1/docs/README.html --standalone --self-contained --highlight-style pygments --template /home/travis/R/Library/rmarkdown/rmarkdown/templates/github_document/resources/preview.html --variable 'github-markdown-css:/home/travis/R/Library/rmarkdown/rmarkdown/templates/github_document/resources/github.css' --email-obfuscation none 
+
+Preview created: /home/travis/build/stephlocke/ReproducibleGLM-step1/docs/README.html
+
+Output created: docs/README.md
+> rmarkdown::render("outputs/FullModel.Rmd", output_dir="docs")
+
+
+processing file: FullModel.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |...........                                                      |  17%
+  ordinary text without R code
+
+  |                                                                         |......................                                           |  33%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |...........................................                      |  67%
+label: datacollection (with options) 
+List of 1
+ $ child: chr "../analysis/DataCollection.Rmd"
+
+
+
+processing file: ./../analysis/DataCollection.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |.....                                                            |   8%
+  ordinary text without R code
+
+  |                                                                         |..........                                                       |  15%
+label: getdatasetup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |...............                                                  |  23%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  31%
+label: makedb
+Quitting from lines 13-13 (./../analysis/DataCollection.Rmd) 
+Quitting from lines 13-13 (./../analysis/DataCollection.Rmd) 
+Error in library(DBI) : there is no package called 'DBI'
+Calls: <Anonymous> ... withCallingHandlers -> withVisible -> eval -> eval -> library
+
+
 Execution halted
