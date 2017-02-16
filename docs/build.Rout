@@ -32,551 +32,279 @@ locale:
 
 attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
+> packrat::on()
 > installed.packages()
-           Package      LibPath                            Version  
-backports  "backports"  "/home/travis/R/Library"           "1.0.5"  
-base64enc  "base64enc"  "/home/travis/R/Library"           "0.1-3"  
-bitops     "bitops"     "/home/travis/R/Library"           "1.0-6"  
-caTools    "caTools"    "/home/travis/R/Library"           "1.17.1" 
-curl       "curl"       "/home/travis/R/Library"           "2.3"    
-devtools   "devtools"   "/home/travis/R/Library"           "1.12.0" 
-digest     "digest"     "/home/travis/R/Library"           "0.6.12" 
-evaluate   "evaluate"   "/home/travis/R/Library"           "0.10"   
-git2r      "git2r"      "/home/travis/R/Library"           "0.18.0" 
-highr      "highr"      "/home/travis/R/Library"           "0.6"    
-htmltools  "htmltools"  "/home/travis/R/Library"           "0.3.5"  
-httr       "httr"       "/home/travis/R/Library"           "1.2.1"  
-jsonlite   "jsonlite"   "/home/travis/R/Library"           "1.2"    
-knitr      "knitr"      "/home/travis/R/Library"           "1.15.1" 
-magrittr   "magrittr"   "/home/travis/R/Library"           "1.5"    
-markdown   "markdown"   "/home/travis/R/Library"           "0.7.7"  
-memoise    "memoise"    "/home/travis/R/Library"           "1.0.0"  
-mime       "mime"       "/home/travis/R/Library"           "0.5"    
-openssl    "openssl"    "/home/travis/R/Library"           "0.9.6"  
-packrat    "packrat"    "/home/travis/R/Library"           "0.4.8-1"
-R6         "R6"         "/home/travis/R/Library"           "2.2.0"  
-Rcpp       "Rcpp"       "/home/travis/R/Library"           "0.12.9" 
-rmarkdown  "rmarkdown"  "/home/travis/R/Library"           "1.3"    
-rprojroot  "rprojroot"  "/home/travis/R/Library"           "1.2"    
-rstudioapi "rstudioapi" "/home/travis/R/Library"           "0.6"    
-stringi    "stringi"    "/home/travis/R/Library"           "1.1.2"  
-stringr    "stringr"    "/home/travis/R/Library"           "1.1.0"  
-whisker    "whisker"    "/home/travis/R/Library"           "0.3-2"  
-withr      "withr"      "/home/travis/R/Library"           "1.0.2"  
-yaml       "yaml"       "/home/travis/R/Library"           "2.1.14" 
-base       "base"       "/home/travis/R-bin/lib/R/library" "3.3.2"  
-boot       "boot"       "/home/travis/R-bin/lib/R/library" "1.3-18" 
-class      "class"      "/home/travis/R-bin/lib/R/library" "7.3-14" 
-cluster    "cluster"    "/home/travis/R-bin/lib/R/library" "2.0.5"  
-codetools  "codetools"  "/home/travis/R-bin/lib/R/library" "0.2-15" 
-compiler   "compiler"   "/home/travis/R-bin/lib/R/library" "3.3.2"  
-datasets   "datasets"   "/home/travis/R-bin/lib/R/library" "3.3.2"  
-foreign    "foreign"    "/home/travis/R-bin/lib/R/library" "0.8-67" 
-graphics   "graphics"   "/home/travis/R-bin/lib/R/library" "3.3.2"  
-grDevices  "grDevices"  "/home/travis/R-bin/lib/R/library" "3.3.2"  
-grid       "grid"       "/home/travis/R-bin/lib/R/library" "3.3.2"  
-KernSmooth "KernSmooth" "/home/travis/R-bin/lib/R/library" "2.23-15"
-lattice    "lattice"    "/home/travis/R-bin/lib/R/library" "0.20-34"
-MASS       "MASS"       "/home/travis/R-bin/lib/R/library" "7.3-45" 
-Matrix     "Matrix"     "/home/travis/R-bin/lib/R/library" "1.2-7.1"
-methods    "methods"    "/home/travis/R-bin/lib/R/library" "3.3.2"  
-mgcv       "mgcv"       "/home/travis/R-bin/lib/R/library" "1.8-15" 
-nlme       "nlme"       "/home/travis/R-bin/lib/R/library" "3.1-128"
-nnet       "nnet"       "/home/travis/R-bin/lib/R/library" "7.3-12" 
-parallel   "parallel"   "/home/travis/R-bin/lib/R/library" "3.3.2"  
-rpart      "rpart"      "/home/travis/R-bin/lib/R/library" "4.1-10" 
-spatial    "spatial"    "/home/travis/R-bin/lib/R/library" "7.3-11" 
-splines    "splines"    "/home/travis/R-bin/lib/R/library" "3.3.2"  
-stats      "stats"      "/home/travis/R-bin/lib/R/library" "3.3.2"  
-stats4     "stats4"     "/home/travis/R-bin/lib/R/library" "3.3.2"  
-survival   "survival"   "/home/travis/R-bin/lib/R/library" "2.39-5" 
-tcltk      "tcltk"      "/home/travis/R-bin/lib/R/library" "3.3.2"  
-tools      "tools"      "/home/travis/R-bin/lib/R/library" "3.3.2"  
-utils      "utils"      "/home/travis/R-bin/lib/R/library" "3.3.2"  
-           Priority      Depends                                          
-backports  NA            "R (>= 3.0.0)"                                   
-base64enc  NA            "R (>= 2.9.0)"                                   
-bitops     NA            NA                                               
-caTools    NA            "R (>= 2.2.0)"                                   
-curl       NA            "R (>= 3.0.0)"                                   
-devtools   NA            "R (>= 3.0.2)"                                   
-digest     NA            "R (>= 2.4.1)"                                   
-evaluate   NA            "R (>= 3.0.2)"                                   
-git2r      NA            "R (>= 3.0.2), methods"                          
-highr      NA            "R (>= 3.0.2)"                                   
-htmltools  NA            "R (>= 2.14.1)"                                  
-httr       NA            "R (>= 3.0.0)"                                   
-jsonlite   NA            "methods"                                        
-knitr      NA            "R (>= 3.1.0)"                                   
-magrittr   NA            NA                                               
-markdown   NA            "R (>= 2.11.1)"                                  
-memoise    NA            NA                                               
-mime       NA            NA                                               
-openssl    NA            NA                                               
-packrat    NA            "R (>= 3.0.0)"                                   
-R6         NA            "R (>= 3.0)"                                     
-Rcpp       NA            "R (>= 3.0.0)"                                   
-rmarkdown  NA            "R (>= 3.0)"                                     
-rprojroot  NA            "R (>= 3.0.0)"                                   
-rstudioapi NA            NA                                               
-stringi    NA            "R (>= 2.13.1)"                                  
-stringr    NA            "R (>= 2.14)"                                    
-whisker    NA            NA                                               
-withr      NA            "R (>= 3.0.2)"                                   
-yaml       NA            NA                                               
-base       "base"        NA                                               
-boot       "recommended" "R (>= 3.0.0), graphics, stats"                  
-class      "recommended" "R (>= 3.0.0), stats, utils"                     
-cluster    "recommended" "R (>= 3.0.1)"                                   
-codetools  "recommended" "R (>= 2.1)"                                     
-compiler   "base"        NA                                               
-datasets   "base"        NA                                               
-foreign    "recommended" "R (>= 3.0.0)"                                   
-graphics   "base"        NA                                               
-grDevices  "base"        NA                                               
-grid       "base"        NA                                               
-KernSmooth "recommended" "R (>= 2.5.0), stats"                            
-lattice    "recommended" "R (>= 3.0.0)"                                   
-MASS       "recommended" "R (>= 3.1.0), grDevices, graphics, stats, utils"
-Matrix     "recommended" "R (>= 3.0.1)"                                   
-methods    "base"        NA                                               
-mgcv       "recommended" "R (>= 2.14.0), nlme (>= 3.1-64)"                
-nlme       "recommended" "R (>= 3.0.2)"                                   
-nnet       "recommended" "R (>= 2.14.0), stats, utils"                    
-parallel   "base"        NA                                               
-rpart      "recommended" "R (>= 2.15.0), graphics, stats, grDevices"      
-spatial    "recommended" "R (>= 3.0.0), graphics, stats, utils"           
-splines    "base"        NA                                               
-stats      "base"        NA                                               
-stats4     "base"        NA                                               
-survival   "recommended" "R (>= 2.13.0)"                                  
-tcltk      "base"        NA                                               
-tools      "base"        NA                                               
-utils      "base"        NA                                               
-           Imports                                                                                                                                        
-backports  "utils"                                                                                                                                        
-base64enc  NA                                                                                                                                             
-bitops     NA                                                                                                                                             
-caTools    "bitops"                                                                                                                                       
-curl       NA                                                                                                                                             
-devtools   "httr (>= 0.4), utils, tools, methods, memoise (>= 1.0.0),\nwhisker, digest, rstudioapi (>= 0.2.0), jsonlite, stats, git2r\n(>= 0.11.0), withr"
-digest     NA                                                                                                                                             
-evaluate   "methods, stringr (>= 0.6.2)"                                                                                                                  
-git2r      "graphics, utils"                                                                                                                              
-highr      NA                                                                                                                                             
-htmltools  "utils, digest, Rcpp"                                                                                                                          
-httr       "jsonlite, mime, curl (>= 0.9.1), openssl (>= 0.8), R6"                                                                                        
-jsonlite   NA                                                                                                                                             
-knitr      "evaluate (>= 0.10), digest, highr, markdown, stringr (>= 0.6),\nyaml, methods, tools"                                                         
-magrittr   NA                                                                                                                                             
-markdown   "mime (>= 0.3)"                                                                                                                                
-memoise    "digest (>= 0.6.3)"                                                                                                                            
-mime       "tools"                                                                                                                                        
-openssl    NA                                                                                                                                             
-packrat    "tools, utils"                                                                                                                                 
-R6         NA                                                                                                                                             
-Rcpp       "methods, utils"                                                                                                                               
-rmarkdown  "tools, utils, knitr (>= 1.14), yaml (>= 2.1.5), htmltools (>=\n0.3.5), caTools, evaluate (>= 0.8), base64enc, jsonlite,\nrprojroot, methods"  
-rprojroot  "backports"                                                                                                                                    
-rstudioapi NA                                                                                                                                             
-stringi    "tools, utils, stats"                                                                                                                          
-stringr    "stringi (>= 0.4.1), magrittr"                                                                                                                 
-whisker    NA                                                                                                                                             
-withr      "stats, graphics"                                                                                                                              
-yaml       NA                                                                                                                                             
-base       NA                                                                                                                                             
-boot       NA                                                                                                                                             
-class      "MASS"                                                                                                                                         
-cluster    "graphics, grDevices, stats, utils"                                                                                                            
-codetools  NA                                                                                                                                             
-compiler   NA                                                                                                                                             
-datasets   NA                                                                                                                                             
-foreign    "methods, utils, stats"                                                                                                                        
-graphics   "grDevices"                                                                                                                                    
-grDevices  NA                                                                                                                                             
-grid       "grDevices, utils"                                                                                                                             
-KernSmooth NA                                                                                                                                             
-lattice    "grid, grDevices, graphics, stats, utils"                                                                                                      
-MASS       "methods"                                                                                                                                      
-Matrix     "methods, graphics, grid, stats, utils, lattice"                                                                                               
-methods    "utils, stats"                                                                                                                                 
-mgcv       "methods, stats, graphics, Matrix"                                                                                                             
-nlme       "graphics, stats, utils, lattice"                                                                                                              
-nnet       NA                                                                                                                                             
-parallel   "tools"                                                                                                                                        
-rpart      NA                                                                                                                                             
-spatial    NA                                                                                                                                             
-splines    "graphics, stats"                                                                                                                              
-stats      "utils, grDevices, graphics"                                                                                                                   
-stats4     "graphics, methods, stats"                                                                                                                     
-survival   "graphics, Matrix, methods, splines, stats, utils"                                                                                             
-tcltk      "utils"                                                                                                                                        
-tools      NA                                                                                                                                             
-utils      NA                                                                                                                                             
-           LinkingTo
-backports  NA       
-base64enc  NA       
-bitops     NA       
-caTools    NA       
-curl       NA       
-devtools   NA       
-digest     NA       
-evaluate   NA       
-git2r      NA       
-highr      NA       
-htmltools  "Rcpp"   
-httr       NA       
-jsonlite   NA       
-knitr      NA       
-magrittr   NA       
-markdown   NA       
-memoise    NA       
-mime       NA       
-openssl    NA       
-packrat    NA       
-R6         NA       
-Rcpp       NA       
-rmarkdown  NA       
-rprojroot  NA       
-rstudioapi NA       
-stringi    NA       
-stringr    NA       
-whisker    NA       
-withr      NA       
-yaml       NA       
-base       NA       
-boot       NA       
-class      NA       
-cluster    NA       
-codetools  NA       
-compiler   NA       
-datasets   NA       
-foreign    NA       
-graphics   NA       
-grDevices  NA       
-grid       NA       
-KernSmooth NA       
-lattice    NA       
-MASS       NA       
-Matrix     NA       
-methods    NA       
-mgcv       NA       
-nlme       NA       
-nnet       NA       
-parallel   NA       
-rpart      NA       
-spatial    NA       
-splines    NA       
-stats      NA       
-stats4     NA       
-survival   NA       
-tcltk      NA       
-tools      NA       
-utils      NA       
-           Suggests                                                                                                                                                                                                             
-backports  NA                                                                                                                                                                                                                   
-base64enc  NA                                                                                                                                                                                                                   
-bitops     NA                                                                                                                                                                                                                   
-caTools    "MASS, rpart"                                                                                                                                                                                                        
-curl       "testthat (>= 1.0.0), knitr, jsonlite, rmarkdown, magrittr"                                                                                                                                                          
-devtools   "curl (>= 0.9), crayon, testthat (>= 0.7), BiocInstaller, Rcpp\n(>= 0.10.0), MASS, rmarkdown, knitr, hunspell (>= 1.2), lintr\n(>= 0.2.1), bitops, roxygen2 (>= 5.0.0), evaluate, rversions,\ncovr, gmailr (> 0.7.0)"
-digest     "knitr, rmarkdown"                                                                                                                                                                                                   
-evaluate   "testthat, lattice, ggplot2"                                                                                                                                                                                         
-git2r      "getPass"                                                                                                                                                                                                            
-highr      "knitr, testit"                                                                                                                                                                                                      
-htmltools  "markdown, testthat"                                                                                                                                                                                                 
-httr       "httpuv, jpeg, knitr, png, testthat (>= 0.8.0), readr, xml2,\nrmarkdown"                                                                                                                                             
-jsonlite   "httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp"                                                                                                                                                                
-knitr      "formatR, testit, rgl (>= 0.95.1201), codetools, rmarkdown,\nhtmlwidgets (>= 0.7), webshot, tikzDevice (>= 0.10), png, jpeg,\nXML, RCurl, DBI (>= 0.4-1), tibble"                                                    
-magrittr   "testthat, knitr"                                                                                                                                                                                                    
-markdown   "knitr, RCurl"                                                                                                                                                                                                       
-memoise    "testthat"                                                                                                                                                                                                           
-mime       NA                                                                                                                                                                                                                   
-openssl    "testthat, digest, knitr, rmarkdown, jsonlite, jose"                                                                                                                                                                 
-packrat    "testthat (>= 0.7), devtools, httr, knitr, rmarkdown"                                                                                                                                                                
-R6         "knitr, microbenchmark, pryr, testthat, ggplot2, scales"                                                                                                                                                             
-Rcpp       "RUnit, inline, rbenchmark, highlight, pkgKitten (>= 0.1.2)"                                                                                                                                                         
-rmarkdown  "shiny (>= 0.11), tufte, testthat, digest, tibble"                                                                                                                                                                   
-rprojroot  "testthat, knitr, withr, rmarkdown"                                                                                                                                                                                  
-rstudioapi "testthat"                                                                                                                                                                                                           
-stringi    NA                                                                                                                                                                                                                   
-stringr    "testthat, knitr, htmltools, htmlwidgets, rmarkdown, covr"                                                                                                                                                           
-whisker    "markdown"                                                                                                                                                                                                           
-withr      "testthat"                                                                                                                                                                                                           
-yaml       "testthat"                                                                                                                                                                                                           
-base       "methods"                                                                                                                                                                                                            
-boot       "MASS, survival"                                                                                                                                                                                                     
-class      NA                                                                                                                                                                                                                   
-cluster    "MASS"                                                                                                                                                                                                               
-codetools  NA                                                                                                                                                                                                                   
-compiler   NA                                                                                                                                                                                                                   
-datasets   NA                                                                                                                                                                                                                   
-foreign    NA                                                                                                                                                                                                                   
-graphics   NA                                                                                                                                                                                                                   
-grDevices  "KernSmooth"                                                                                                                                                                                                         
-grid       "lattice"                                                                                                                                                                                                            
-KernSmooth "MASS"                                                                                                                                                                                                               
-lattice    "KernSmooth, MASS"                                                                                                                                                                                                   
-MASS       "lattice, nlme, nnet, survival"                                                                                                                                                                                      
-Matrix     "expm, MASS"                                                                                                                                                                                                         
-methods    "codetools"                                                                                                                                                                                                          
-mgcv       "splines, parallel, survival, MASS"                                                                                                                                                                                  
-nlme       "Hmisc, MASS"                                                                                                                                                                                                        
-nnet       "MASS"                                                                                                                                                                                                               
-parallel   "methods"                                                                                                                                                                                                            
-rpart      "survival"                                                                                                                                                                                                           
-spatial    "MASS"                                                                                                                                                                                                               
-splines    "Matrix, methods"                                                                                                                                                                                                    
-stats      "MASS, Matrix, SuppDists, methods, stats4"                                                                                                                                                                           
-stats4     NA                                                                                                                                                                                                                   
-survival   NA                                                                                                                                                                                                                   
-tcltk      NA                                                                                                                                                                                                                   
-tools      "codetools, methods, xml2"                                                                                                                                                                                           
-utils      "methods, XML"                                                                                                                                                                                                       
-           Enhances                               
-backports  NA                                     
-base64enc  "png"                                  
-bitops     NA                                     
-caTools    NA                                     
-curl       NA                                     
-devtools   NA                                     
-digest     NA                                     
-evaluate   NA                                     
-git2r      NA                                     
-highr      NA                                     
-htmltools  "knitr"                                
-httr       NA                                     
-jsonlite   NA                                     
-knitr      NA                                     
-magrittr   NA                                     
-markdown   NA                                     
-memoise    NA                                     
-mime       NA                                     
-openssl    NA                                     
-packrat    "BiocInstaller"                        
-R6         NA                                     
-Rcpp       NA                                     
-rmarkdown  NA                                     
-rprojroot  NA                                     
-rstudioapi NA                                     
-stringi    NA                                     
-stringr    NA                                     
-whisker    NA                                     
-withr      NA                                     
-yaml       NA                                     
-base       NA                                     
-boot       NA                                     
-class      NA                                     
-cluster    NA                                     
-codetools  NA                                     
-compiler   NA                                     
-datasets   NA                                     
-foreign    NA                                     
-graphics   NA                                     
-grDevices  NA                                     
-grid       NA                                     
-KernSmooth NA                                     
-lattice    "chron"                                
-MASS       NA                                     
-Matrix     "MatrixModels, graph, SparseM, sfsmisc"
-methods    NA                                     
-mgcv       NA                                     
-nlme       NA                                     
-nnet       NA                                     
-parallel   "snow, nws, Rmpi"                      
-rpart      NA                                     
-spatial    NA                                     
-splines    NA                                     
-stats      NA                                     
-stats4     NA                                     
-survival   NA                                     
-tcltk      NA                                     
-tools      NA                                     
-utils      NA                                     
-           License                       License_is_FOSS License_restricts_use
-backports  "GPL-2"                       NA              NA                   
-base64enc  "GPL-2 | GPL-3"               NA              NA                   
-bitops     "GPL (>= 2)"                  NA              NA                   
-caTools    "GPL-3"                       NA              NA                   
-curl       "MIT + file LICENSE"          NA              NA                   
-devtools   "GPL (>= 2)"                  NA              NA                   
-digest     "GPL (>= 2)"                  NA              NA                   
-evaluate   "MIT + file LICENSE"          NA              NA                   
-git2r      "GPL-2"                       NA              NA                   
-highr      "GPL"                         NA              NA                   
-htmltools  "GPL (>= 2)"                  NA              NA                   
-httr       "MIT + file LICENSE"          NA              NA                   
-jsonlite   "MIT + file LICENSE"          NA              NA                   
-knitr      "GPL"                         NA              NA                   
-magrittr   "MIT + file LICENSE"          NA              NA                   
-markdown   "GPL-2"                       NA              NA                   
-memoise    "MIT + file LICENSE"          NA              NA                   
-mime       "GPL"                         NA              NA                   
-openssl    "MIT + file LICENSE"          NA              NA                   
-packrat    "GPL-2"                       NA              NA                   
-R6         "MIT + file LICENSE"          NA              NA                   
-Rcpp       "GPL (>= 2)"                  NA              NA                   
-rmarkdown  "GPL-3"                       NA              NA                   
-rprojroot  "GPL-3"                       NA              NA                   
-rstudioapi "MIT + file LICENSE"          NA              NA                   
-stringi    "file LICENSE"                "yes"           NA                   
-stringr    "GPL-2"                       NA              NA                   
-whisker    "GPL-3"                       NA              NA                   
-withr      "GPL (>= 2)"                  NA              NA                   
-yaml       "BSD_3_clause + file LICENSE" NA              NA                   
-base       "Part of R 3.3.2"             NA              NA                   
-boot       "Unlimited"                   NA              NA                   
-class      "GPL-2 | GPL-3"               NA              NA                   
-cluster    "GPL (>= 2)"                  NA              NA                   
-codetools  "GPL"                         NA              NA                   
-compiler   "Part of R 3.3.2"             NA              NA                   
-datasets   "Part of R 3.3.2"             NA              NA                   
-foreign    "GPL (>= 2)"                  NA              NA                   
-graphics   "Part of R 3.3.2"             NA              NA                   
-grDevices  "Part of R 3.3.2"             NA              NA                   
-grid       "Part of R 3.3.2"             NA              NA                   
-KernSmooth "Unlimited"                   NA              NA                   
-lattice    "GPL (>= 2)"                  NA              NA                   
-MASS       "GPL-2 | GPL-3"               NA              NA                   
-Matrix     "GPL (>= 2) | file LICENCE"   NA              NA                   
-methods    "Part of R 3.3.2"             NA              NA                   
-mgcv       "GPL (>= 2)"                  NA              NA                   
-nlme       "GPL (>= 2) | file LICENCE"   NA              NA                   
-nnet       "GPL-2 | GPL-3"               NA              NA                   
-parallel   "Part of R 3.3.2"             NA              NA                   
-rpart      "GPL-2 | GPL-3"               NA              NA                   
-spatial    "GPL-2 | GPL-3"               NA              NA                   
-splines    "Part of R 3.3.2"             NA              NA                   
-stats      "Part of R 3.3.2"             NA              NA                   
-stats4     "Part of R 3.3.2"             NA              NA                   
-survival   "LGPL (>= 2)"                 NA              NA                   
-tcltk      "Part of R 3.3.2"             NA              NA                   
-tools      "Part of R 3.3.2"             NA              NA                   
-utils      "Part of R 3.3.2"             NA              NA                   
-           OS_type MD5sum NeedsCompilation Built  
-backports  NA      NA     "no"             "3.3.2"
-base64enc  NA      NA     "yes"            "3.3.2"
-bitops     NA      NA     "yes"            "3.3.2"
-caTools    NA      NA     "yes"            "3.3.2"
-curl       NA      NA     "yes"            "3.3.2"
-devtools   NA      NA     "yes"            "3.3.2"
-digest     NA      NA     "yes"            "3.3.2"
-evaluate   NA      NA     "no"             "3.3.2"
-git2r      NA      NA     "yes"            "3.3.2"
-highr      NA      NA     "no"             "3.3.2"
-htmltools  NA      NA     "yes"            "3.3.2"
-httr       NA      NA     "no"             "3.3.2"
-jsonlite   NA      NA     "yes"            "3.3.2"
-knitr      NA      NA     "no"             "3.3.2"
-magrittr   NA      NA     "no"             "3.3.2"
-markdown   NA      NA     "yes"            "3.3.2"
-memoise    NA      NA     "no"             "3.3.2"
-mime       NA      NA     "yes"            "3.3.2"
-openssl    NA      NA     "yes"            "3.3.2"
-packrat    NA      NA     "no"             "3.3.2"
-R6         NA      NA     "no"             "3.3.2"
-Rcpp       NA      NA     "yes"            "3.3.2"
-rmarkdown  NA      NA     "no"             "3.3.2"
-rprojroot  NA      NA     "no"             "3.3.2"
-rstudioapi NA      NA     "no"             "3.3.2"
-stringi    NA      NA     "yes"            "3.3.2"
-stringr    NA      NA     "no"             "3.3.2"
-whisker    NA      NA     "no"             "3.3.2"
-withr      NA      NA     "no"             "3.3.2"
-yaml       NA      NA     "yes"            "3.3.2"
-base       NA      NA     NA               "3.3.2"
-boot       NA      NA     "no"             "3.3.2"
-class      NA      NA     "yes"            "3.3.2"
-cluster    NA      NA     "yes"            "3.3.2"
-codetools  NA      NA     "no"             "3.3.2"
-compiler   NA      NA     NA               "3.3.2"
-datasets   NA      NA     NA               "3.3.2"
-foreign    NA      NA     "yes"            "3.3.2"
-graphics   NA      NA     "yes"            "3.3.2"
-grDevices  NA      NA     "yes"            "3.3.2"
-grid       NA      NA     "yes"            "3.3.2"
-KernSmooth NA      NA     "yes"            "3.3.2"
-lattice    NA      NA     "yes"            "3.3.2"
-MASS       NA      NA     "yes"            "3.3.2"
-Matrix     NA      NA     "yes"            "3.3.2"
-methods    NA      NA     "yes"            "3.3.2"
-mgcv       NA      NA     "yes"            "3.3.2"
-nlme       NA      NA     "yes"            "3.3.2"
-nnet       NA      NA     "yes"            "3.3.2"
-parallel   NA      NA     "yes"            "3.3.2"
-rpart      NA      NA     "yes"            "3.3.2"
-spatial    NA      NA     "yes"            "3.3.2"
-splines    NA      NA     "yes"            "3.3.2"
-stats      NA      NA     "yes"            "3.3.2"
-stats4     NA      NA     NA               "3.3.2"
-survival   NA      NA     "yes"            "3.3.2"
-tcltk      NA      NA     "yes"            "3.3.2"
-tools      NA      NA     "yes"            "3.3.2"
-utils      NA      NA     "yes"            "3.3.2"
+           Package     
+base       "base"      
+boot       "boot"      
+class      "class"     
+cluster    "cluster"   
+codetools  "codetools" 
+compiler   "compiler"  
+datasets   "datasets"  
+foreign    "foreign"   
+graphics   "graphics"  
+grDevices  "grDevices" 
+grid       "grid"      
+KernSmooth "KernSmooth"
+lattice    "lattice"   
+MASS       "MASS"      
+Matrix     "Matrix"    
+methods    "methods"   
+mgcv       "mgcv"      
+nlme       "nlme"      
+nnet       "nnet"      
+parallel   "parallel"  
+rpart      "rpart"     
+spatial    "spatial"   
+splines    "splines"   
+stats      "stats"     
+stats4     "stats4"    
+survival   "survival"  
+tcltk      "tcltk"     
+tools      "tools"     
+utils      "utils"     
+           LibPath                                                            
+base       "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+boot       "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+class      "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+cluster    "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+codetools  "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+compiler   "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+datasets   "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+foreign    "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+graphics   "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+grDevices  "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+grid       "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+KernSmooth "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+lattice    "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+MASS       "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+Matrix     "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+methods    "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+mgcv       "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+nlme       "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+nnet       "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+parallel   "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+rpart      "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+spatial    "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+splines    "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+stats      "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+stats4     "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+survival   "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+tcltk      "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+tools      "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+utils      "/home/travis/build/stephlocke/ReproducibleGLM-step1/packrat/lib-R"
+           Version   Priority     
+base       "3.3.2"   "base"       
+boot       "1.3-18"  "recommended"
+class      "7.3-14"  "recommended"
+cluster    "2.0.5"   "recommended"
+codetools  "0.2-15"  "recommended"
+compiler   "3.3.2"   "base"       
+datasets   "3.3.2"   "base"       
+foreign    "0.8-67"  "recommended"
+graphics   "3.3.2"   "base"       
+grDevices  "3.3.2"   "base"       
+grid       "3.3.2"   "base"       
+KernSmooth "2.23-15" "recommended"
+lattice    "0.20-34" "recommended"
+MASS       "7.3-45"  "recommended"
+Matrix     "1.2-7.1" "recommended"
+methods    "3.3.2"   "base"       
+mgcv       "1.8-15"  "recommended"
+nlme       "3.1-128" "recommended"
+nnet       "7.3-12"  "recommended"
+parallel   "3.3.2"   "base"       
+rpart      "4.1-10"  "recommended"
+spatial    "7.3-11"  "recommended"
+splines    "3.3.2"   "base"       
+stats      "3.3.2"   "base"       
+stats4     "3.3.2"   "base"       
+survival   "2.39-5"  "recommended"
+tcltk      "3.3.2"   "base"       
+tools      "3.3.2"   "base"       
+utils      "3.3.2"   "base"       
+           Depends                                          
+base       NA                                               
+boot       "R (>= 3.0.0), graphics, stats"                  
+class      "R (>= 3.0.0), stats, utils"                     
+cluster    "R (>= 3.0.1)"                                   
+codetools  "R (>= 2.1)"                                     
+compiler   NA                                               
+datasets   NA                                               
+foreign    "R (>= 3.0.0)"                                   
+graphics   NA                                               
+grDevices  NA                                               
+grid       NA                                               
+KernSmooth "R (>= 2.5.0), stats"                            
+lattice    "R (>= 3.0.0)"                                   
+MASS       "R (>= 3.1.0), grDevices, graphics, stats, utils"
+Matrix     "R (>= 3.0.1)"                                   
+methods    NA                                               
+mgcv       "R (>= 2.14.0), nlme (>= 3.1-64)"                
+nlme       "R (>= 3.0.2)"                                   
+nnet       "R (>= 2.14.0), stats, utils"                    
+parallel   NA                                               
+rpart      "R (>= 2.15.0), graphics, stats, grDevices"      
+spatial    "R (>= 3.0.0), graphics, stats, utils"           
+splines    NA                                               
+stats      NA                                               
+stats4     NA                                               
+survival   "R (>= 2.13.0)"                                  
+tcltk      NA                                               
+tools      NA                                               
+utils      NA                                               
+           Imports                                            LinkingTo
+base       NA                                                 NA       
+boot       NA                                                 NA       
+class      "MASS"                                             NA       
+cluster    "graphics, grDevices, stats, utils"                NA       
+codetools  NA                                                 NA       
+compiler   NA                                                 NA       
+datasets   NA                                                 NA       
+foreign    "methods, utils, stats"                            NA       
+graphics   "grDevices"                                        NA       
+grDevices  NA                                                 NA       
+grid       "grDevices, utils"                                 NA       
+KernSmooth NA                                                 NA       
+lattice    "grid, grDevices, graphics, stats, utils"          NA       
+MASS       "methods"                                          NA       
+Matrix     "methods, graphics, grid, stats, utils, lattice"   NA       
+methods    "utils, stats"                                     NA       
+mgcv       "methods, stats, graphics, Matrix"                 NA       
+nlme       "graphics, stats, utils, lattice"                  NA       
+nnet       NA                                                 NA       
+parallel   "tools"                                            NA       
+rpart      NA                                                 NA       
+spatial    NA                                                 NA       
+splines    "graphics, stats"                                  NA       
+stats      "utils, grDevices, graphics"                       NA       
+stats4     "graphics, methods, stats"                         NA       
+survival   "graphics, Matrix, methods, splines, stats, utils" NA       
+tcltk      "utils"                                            NA       
+tools      NA                                                 NA       
+utils      NA                                                 NA       
+           Suggests                                  
+base       "methods"                                 
+boot       "MASS, survival"                          
+class      NA                                        
+cluster    "MASS"                                    
+codetools  NA                                        
+compiler   NA                                        
+datasets   NA                                        
+foreign    NA                                        
+graphics   NA                                        
+grDevices  "KernSmooth"                              
+grid       "lattice"                                 
+KernSmooth "MASS"                                    
+lattice    "KernSmooth, MASS"                        
+MASS       "lattice, nlme, nnet, survival"           
+Matrix     "expm, MASS"                              
+methods    "codetools"                               
+mgcv       "splines, parallel, survival, MASS"       
+nlme       "Hmisc, MASS"                             
+nnet       "MASS"                                    
+parallel   "methods"                                 
+rpart      "survival"                                
+spatial    "MASS"                                    
+splines    "Matrix, methods"                         
+stats      "MASS, Matrix, SuppDists, methods, stats4"
+stats4     NA                                        
+survival   NA                                        
+tcltk      NA                                        
+tools      "codetools, methods, xml2"                
+utils      "methods, XML"                            
+           Enhances                                License                    
+base       NA                                      "Part of R 3.3.2"          
+boot       NA                                      "Unlimited"                
+class      NA                                      "GPL-2 | GPL-3"            
+cluster    NA                                      "GPL (>= 2)"               
+codetools  NA                                      "GPL"                      
+compiler   NA                                      "Part of R 3.3.2"          
+datasets   NA                                      "Part of R 3.3.2"          
+foreign    NA                                      "GPL (>= 2)"               
+graphics   NA                                      "Part of R 3.3.2"          
+grDevices  NA                                      "Part of R 3.3.2"          
+grid       NA                                      "Part of R 3.3.2"          
+KernSmooth NA                                      "Unlimited"                
+lattice    "chron"                                 "GPL (>= 2)"               
+MASS       NA                                      "GPL-2 | GPL-3"            
+Matrix     "MatrixModels, graph, SparseM, sfsmisc" "GPL (>= 2) | file LICENCE"
+methods    NA                                      "Part of R 3.3.2"          
+mgcv       NA                                      "GPL (>= 2)"               
+nlme       NA                                      "GPL (>= 2) | file LICENCE"
+nnet       NA                                      "GPL-2 | GPL-3"            
+parallel   "snow, nws, Rmpi"                       "Part of R 3.3.2"          
+rpart      NA                                      "GPL-2 | GPL-3"            
+spatial    NA                                      "GPL-2 | GPL-3"            
+splines    NA                                      "Part of R 3.3.2"          
+stats      NA                                      "Part of R 3.3.2"          
+stats4     NA                                      "Part of R 3.3.2"          
+survival   NA                                      "LGPL (>= 2)"              
+tcltk      NA                                      "Part of R 3.3.2"          
+tools      NA                                      "Part of R 3.3.2"          
+utils      NA                                      "Part of R 3.3.2"          
+           License_is_FOSS License_restricts_use OS_type MD5sum
+base       NA              NA                    NA      NA    
+boot       NA              NA                    NA      NA    
+class      NA              NA                    NA      NA    
+cluster    NA              NA                    NA      NA    
+codetools  NA              NA                    NA      NA    
+compiler   NA              NA                    NA      NA    
+datasets   NA              NA                    NA      NA    
+foreign    NA              NA                    NA      NA    
+graphics   NA              NA                    NA      NA    
+grDevices  NA              NA                    NA      NA    
+grid       NA              NA                    NA      NA    
+KernSmooth NA              NA                    NA      NA    
+lattice    NA              NA                    NA      NA    
+MASS       NA              NA                    NA      NA    
+Matrix     NA              NA                    NA      NA    
+methods    NA              NA                    NA      NA    
+mgcv       NA              NA                    NA      NA    
+nlme       NA              NA                    NA      NA    
+nnet       NA              NA                    NA      NA    
+parallel   NA              NA                    NA      NA    
+rpart      NA              NA                    NA      NA    
+spatial    NA              NA                    NA      NA    
+splines    NA              NA                    NA      NA    
+stats      NA              NA                    NA      NA    
+stats4     NA              NA                    NA      NA    
+survival   NA              NA                    NA      NA    
+tcltk      NA              NA                    NA      NA    
+tools      NA              NA                    NA      NA    
+utils      NA              NA                    NA      NA    
+           NeedsCompilation Built  
+base       NA               "3.3.2"
+boot       "no"             "3.3.2"
+class      "yes"            "3.3.2"
+cluster    "yes"            "3.3.2"
+codetools  "no"             "3.3.2"
+compiler   NA               "3.3.2"
+datasets   NA               "3.3.2"
+foreign    "yes"            "3.3.2"
+graphics   "yes"            "3.3.2"
+grDevices  "yes"            "3.3.2"
+grid       "yes"            "3.3.2"
+KernSmooth "yes"            "3.3.2"
+lattice    "yes"            "3.3.2"
+MASS       "yes"            "3.3.2"
+Matrix     "yes"            "3.3.2"
+methods    "yes"            "3.3.2"
+mgcv       "yes"            "3.3.2"
+nlme       "yes"            "3.3.2"
+nnet       "yes"            "3.3.2"
+parallel   "yes"            "3.3.2"
+rpart      "yes"            "3.3.2"
+spatial    "yes"            "3.3.2"
+splines    "yes"            "3.3.2"
+stats      "yes"            "3.3.2"
+stats4     NA               "3.3.2"
+survival   "yes"            "3.3.2"
+tcltk      "yes"            "3.3.2"
+tools      "yes"            "3.3.2"
+utils      "yes"            "3.3.2"
 > rmarkdown::render("README.Rmd", output_format = rmarkdown::github_document(), output_dir="docs")
-
-
-processing file: README.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |......................                                           |  33%
-  ordinary text without R code
-
-  |                                                                         |...........................................                      |  67%
-label: unnamed-chunk-1 (with options) 
-List of 1
- $ echo: logi FALSE
-
-  |                                                                         |.................................................................| 100%
-  ordinary text without R code
-
-
-output file: README.knit.md
-
-/usr/bin/pandoc +RTS -K512m -RTS README.utf8.md --to markdown_github --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /home/travis/build/stephlocke/ReproducibleGLM-step1/docs/README.md --standalone --template /home/travis/R/Library/rmarkdown/rmarkdown/templates/github_document/resources/default.md 
-/usr/bin/pandoc +RTS -K512m -RTS /home/travis/build/stephlocke/ReproducibleGLM-step1/docs/README.md --to html --from markdown_github --output /home/travis/build/stephlocke/ReproducibleGLM-step1/docs/README.html --standalone --self-contained --highlight-style pygments --template /home/travis/R/Library/rmarkdown/rmarkdown/templates/github_document/resources/preview.html --variable 'github-markdown-css:/home/travis/R/Library/rmarkdown/rmarkdown/templates/github_document/resources/github.css' --email-obfuscation none 
-
-Preview created: /home/travis/build/stephlocke/ReproducibleGLM-step1/docs/README.html
-
-Output created: docs/README.md
-> rmarkdown::render("outputs/FullModel.Rmd", output_dir="docs")
-
-
-processing file: FullModel.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |...........                                                      |  17%
-  ordinary text without R code
-
-  |                                                                         |......................                                           |  33%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |................................                                 |  50%
-  ordinary text without R code
-
-  |                                                                         |...........................................                      |  67%
-label: datacollection (with options) 
-List of 1
- $ child: chr "../analysis/DataCollection.Rmd"
-
-
-
-processing file: ./../analysis/DataCollection.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |.....                                                            |   8%
-  ordinary text without R code
-
-  |                                                                         |..........                                                       |  15%
-label: getdatasetup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |...............                                                  |  23%
-  ordinary text without R code
-
-  |                                                                         |....................                                             |  31%
-label: makedb
-Quitting from lines 13-13 (./../analysis/DataCollection.Rmd) 
-Quitting from lines 13-13 (./../analysis/DataCollection.Rmd) 
-Error in library(DBI) : there is no package called 'DBI'
-Calls: <Anonymous> ... withCallingHandlers -> withVisible -> eval -> eval -> library
-
-
+Error in loadNamespace(name) : there is no package called ‘rmarkdown’
+Calls: :: ... tryCatch -> tryCatchList -> tryCatchOne -> <Anonymous>
 Execution halted
