@@ -45,7 +45,7 @@ sum(replicate(1000,pass_ttest(titanic_all$survived)))/1000
 #### How do we get the same sample every time?
 ```{r setseed}
 pass_ttest<-function(x, prop_train = .07){
-  set.seed(6767)
+  set.seed(123)
   n_x_all<-length(x)
   n_train<-floor(prop_train * n_x_all)
   
@@ -91,7 +91,7 @@ We saw that we can set the seed within in a function to always yield the same va
 ### Final sample
 ```{r finalcaretsample}
 library(caret)
-set.seed(8787)
+set.seed(787)
 rows_train_c<-createDataPartition(titanic_all$survived, p = prop_train, list=FALSE)
 titanic_train_c<-titanic_all[rows_train_c,]
 titanic_test_c<-titanic_all[-rows_train_c,]
