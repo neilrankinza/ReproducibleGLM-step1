@@ -1,4 +1,4 @@
-Package: step10setup
+Package: step01data
 Title: A Project with Collected Data
 Version: 0.1.0
 Authors@R: person("Steph", "Locke",   email="steph@itsalocke.com", role = c("aut", "cre"))
