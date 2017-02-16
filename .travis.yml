@@ -4,4 +4,5 @@ language: R
 sudo: false
 cache: packages
 script:
-  - make analysis
+  - chmod 755 deploy.sh
+  - ./deploy.sh
