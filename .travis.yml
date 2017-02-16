@@ -9,6 +9,5 @@ cache:
     - $TRAVIS_BUILD_DIR/packrat/lib
   packages: true
 script:
-  - chmod 755 deploy.sh
-  - chmod 755 build.R
+  - chmod -R 755 .
   - ./deploy.sh
