@@ -12,8 +12,7 @@ git config --global user.name $AUTHORNAME
 git config --global user.email $AUTHOREMAIL
 cd $RENDERDIR
 
-Rscript -e 'rmarkdown::render("README.Rmd", output_format = rmarkdown::github_document(), output_dir="docs")'
-Rscript -e 'rmarkdown::render("outputs/FullModel.Rmd", output_dir="docs")'
+R CMD BATCH build.R
 
 git add .
 git commit -am "[ci skip] Documents produced in clean environment via Travis $TRAVIS_BUILD_NUMBER"
